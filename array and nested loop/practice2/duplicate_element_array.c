@@ -30,17 +30,17 @@ int main()
         arr[input[i]] += 1;
     }
 
-    for (i = 0; i <= largestElement && i != 0; i += 1)
+    for (i = 0; i <= largestElement /*&& i != 0*/; i += 1)
     {
         // printf("%d", arr[i]);
-        for (j = 0; j < i; j++)
+        for (j = 0; j < arr[i]; j++)
         {
-            printf("%d", input[i]);
+            printf("%d", i);
         }
     }
 
     int duplicate = 0, unique = 0;
-    for (i = 1; i <= largestElement; i += 1)
+    for (i = 0; i <= largestElement; i += 1)
     {
         if (arr[i] == 1)
             unique += 1;
